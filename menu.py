@@ -3,6 +3,9 @@ import exe02
 import this
 
 import exe03
+import exe04
+import exe05
+import exe06
 
 this.opcao = 0 #Criar a variavel global
 def mostrarMenu():
@@ -10,7 +13,10 @@ def mostrarMenu():
           "\n1. Exercicio 01" +
           "\n2. Exercicio 02" +
           "\n3. Exercicio 03" +
-          "\n4. Sair")
+          "\n4. Exercicio 04" +
+          "\n5. Exercicio 05" +
+          "\n6. Exercicio 06" +
+          "\n5. Sair")
     this.opcao = int(input()) #Comando para coletar oq o usuario irá digitar
 
 def operacao():
@@ -20,11 +26,17 @@ def operacao():
         #Realizar as operções
         if this.opcao == 1:
             print(exe01.trocar())
-        if this.opcao == 2:
+        elif this.opcao == 2:
             print(exe02.coletar())
-        if this.opcao == 3:
+        elif this.opcao == 3:
             print(exe03.coletarBaseAltura())
-
         elif this.opcao == 4:
+            print(exe04.idade())
+        elif this.opcao == 5:
+            print(exe05.mostrar())
+        elif this.opcao == 6:
+            print(exe06.mostrarNovoSalario())
+
+        elif this.opcao == 7:
             print("Obrigado!")
         else: print("Opção Escolhida Inválida, tente outro número!")
