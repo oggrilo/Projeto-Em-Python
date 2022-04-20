@@ -6,6 +6,7 @@ import exe03
 import exe04
 import exe05
 import exe06
+import exe07
 
 this.opcao = 0 #Criar a variavel global
 def mostrarMenu():
@@ -39,7 +40,9 @@ def operacao():
             print(exe05.mostrar())
         elif this.opcao == 6:
             print(exe06.mostrarNovoSalario())
-
         elif this.opcao == 7:
+            print(exe07.exe07())
+
+        elif this.opcao == 8:
             print("Obrigado!")
         else: print("Opção Escolhida Inválida, tente outro número!")
