@@ -5,5 +5,5 @@ def exe07():
 
     valorFinal = valorFabrica * 1.73
 
-    print("O valor final do carro puta é: " + str(valorFinal))
+    print("O valor final do carro é: " + str(valorFinal))
 
