@@ -19,6 +19,9 @@ def mostrarMenu():
           "\n5. Sair")
     this.opcao = int(input()) #Comando para coletar oq o usuario irá digitar
 
+
+
+
 def operacao():
     #Mostrar o Menu em tela
     while this.opcao != 3:
