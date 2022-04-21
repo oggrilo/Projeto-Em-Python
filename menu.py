@@ -12,6 +12,8 @@ import exe09
 import exe10
 import exe11
 import exe12
+import exe13
+
 this.opcao = 0 #Criar a variavel global
 def mostrarMenu():
     print("Escolha uma das Opções Abaixo!\n " +
@@ -27,7 +29,8 @@ def mostrarMenu():
           "\n10. Exercicio 10" +
           "\n11. Exercicio 11" +
           "\n12. Exercicio 12" +
-          "\n13. Sair")
+          "\n13. Exercicio 13" +
+          "\n14. Sair")
     this.opcao = int(input()) #Comando para coletar oq o usuario irá digitar
 
 
@@ -35,7 +38,7 @@ def mostrarMenu():
 
 def operacao():
     #Mostrar o Menu em tela
-    while this.opcao != 13:
+    while this.opcao != 14:
         mostrarMenu()
         #Realizar as operções
         if this.opcao == 1:
@@ -62,7 +65,9 @@ def operacao():
             print(exe11.calcular())
         elif this.opcao == 12:
             print(exe12.calcularConta())
-
         elif this.opcao == 13:
+            print(exe13.mostrar())
+
+        elif this.opcao == 14:## opção para fechar
             print("Obrigado!")
         else: print("Opção Escolhida Inválida, tente outro número!")
