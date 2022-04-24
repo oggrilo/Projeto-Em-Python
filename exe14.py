@@ -1,9 +1,5 @@
 import this
 
-this.num = 0
-this.contador = 0
-this.resultado = 0
-
 def coletar():
     print("Informe um número")
     this.num = float(input())
